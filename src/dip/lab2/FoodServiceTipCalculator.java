@@ -18,7 +18,7 @@ public class FoodServiceTipCalculator implements TipCalculator{
     }
 
     @Override
-    public double getTip() {
+    public final double getTip() {
         double tipTtl = bill*tip; 
         return tipTtl;
     }

@@ -19,12 +19,12 @@ public class BaggageServiceTipCalculator implements TipCalculator {
     }
 
     @Override
-    public double getTip() {
+    public final double getTip() {
         double tipAmt = bagCount*tip; // always initialize local variables
         return tipAmt;
     }
 
-    public int getBagCount() {
+    public final int getBagCount() {
         return bagCount;
     }
     
