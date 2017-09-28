@@ -16,7 +16,6 @@ public class BaggageServiceTipCalculator implements TipCalculator {
         this.setTip(tip); // perform validation
         this.setBagCount(bags);
         
-        tip = 1.00;
     }
 
     @Override
