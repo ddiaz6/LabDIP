@@ -15,6 +15,8 @@ public class StartUp {
         
         MessageInput input = new GuiInput();
         MessageOutput output = new GuiOutput();
+//        MessageInput input = new ConsoleInput();
+//        MessageOutput output = new ConsoleOutput();
         
         messageService.outputMessage(input, output);
         
