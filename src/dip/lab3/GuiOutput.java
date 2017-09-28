@@ -4,16 +4,20 @@
  * and open the template in the editor.
  */
 package dip.lab3;
-import java.util.Scanner;
+
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author HP
  */
-public class ConsoleWriter {
-    Scanner keyboard = new Scanner(System.in);
-    String text= keyboard.nextLine();
+public class GuiOutput implements MessageOutput{
 
+    @Override
+    public void outputMessage(String message) {
+        JOptionPane.showMessageDialog(null, message);
+
+    }
     
-    System.out.println(text);    
+    
 }

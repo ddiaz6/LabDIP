@@ -3,13 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dip.lab2;
+package dip.lab3;
+
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author HP
  */
-public interface TipCalculator {
+public class GuiInput implements MessageInput{
+
+    @Override
+    public final String getMessage() {
+        return JOptionPane.showInputDialog("Enter Message");
+    }
     
-     public abstract double getTip();
 }

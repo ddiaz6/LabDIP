@@ -11,6 +11,12 @@ package dip.lab3;
  */
 public class StartUp {
     public static void main(String[] args) {
+        MessageService messageService = new MessageService();
+        
+        MessageInput input = new GuiInput();
+        MessageOutput output = new GuiOutput();
+        
+        messageService.outputMessage(input, output);
         
     }
 }

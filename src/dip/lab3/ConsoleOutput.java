@@ -3,13 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dip.lab2;
+package dip.lab3;
 
 /**
  *
  * @author HP
  */
-public interface TipCalculator {
+public class ConsoleOutput implements MessageOutput{
+
+    @Override
+    public final void outputMessage(String message) {
+        System.out.println(message);
+    }
     
-     public abstract double getTip();
 }

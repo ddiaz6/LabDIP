@@ -3,13 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dip.lab2;
+package dip.lab3;
 
 /**
  *
  * @author HP
  */
-public interface TipCalculator {
-    
-     public abstract double getTip();
+public interface MessageOutput {
+    public abstract void outputMessage(String message);
 }
