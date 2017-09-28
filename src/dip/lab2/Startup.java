@@ -26,7 +26,7 @@ public class Startup {
         BaggageServiceTipCalculator calc = new BaggageServiceTipCalculator(1,3);
         
         TipService tipService = new TipService(calc);
-        double tip = tipService.calcTip();
+        double tip = tipService.getTip();
 
         System.out.println("The tip is: $" + tip);
         
